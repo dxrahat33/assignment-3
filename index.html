@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google" content="notranslate">
     <title>Rinterio | Innovate your Home</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,6 +21,15 @@
                 },
               colors: {
                 clifford: '#da373d',
+                'dark1': '#1c1c1c',
+                'dark2': '#494949',
+                'dark3': '#737373',
+                'dark0': '#212121',
+                'primary': '#ABEF5F',
+                'secondary': 'rgba(171, 239, 95, 0.5)',
+                'accent': 'rgba(171, 239, 95, 0.2)',
+                'bg-main': '#f4f4f4',
+                'stroke': '#e9e9e9',
               }
             }
           }
@@ -27,12 +37,53 @@
       </script>
 </head>
 <body>
-    <h1 class="text-red-600">This is testing file</h1>
-    <button class="btn btn-primary">Click me</button>
-    <br>
-    <br>
-    <i class="fa-solid fa-heart"><br> checking fontawome</i>
-    <h1 class="text-4xl font-bold">this default font Family</h1>
-    <h1 class="text-4xl font-bold font-primary-font">this manrope font Family</h1>
+    
+    <header class="font-primary-font">
+
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <a class="text-xl flex items-center justify-center">
+                <i class="fa-solid fa-arrow-right -rotate-45 bg-primary border-none w-8 h-8 flex items-center justify-center mr-2 rounded-full"></i>
+                <h4>Rinterio</h4>
+            </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-dark3">
+                <li class="text-dark2 font-bold"><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+                <div class="hidden md:flex items-center justify-center">
+                    <i class="fa-solid fa-search flex items-center justify-center w-11 h-11 bg-white border border-stroke rounded-full mr-2"></i>
+                    <i class="fa-solid fa-cart-shopping flex items-center justify-center w-11 h-11 bg-white border border-stroke rounded-full mr-2"></i>
+                </div>
+                <div class="hidden md:flex mr-2 bg-primary py-3 px-5 rounded-[32px] font-extrabold items-center flex-row">
+                    <a class="text-dark1" href="">Book Consult</a>
+                    <i class="fa-solid fa-arrow-right -rotate-45 ml-1 flex w-8 h-8 rounded-full items-center justify-center bg-dark1 text-white"></i>
+                </div>
+                <!-- Dropdown content -->
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn  lg:hidden bg-white rounded-full border border-stroke">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                     <li class="text-dark2 font-bold"><a>Home</a></li>
+                     <li><a>Services</a></li>
+                     <li><a>Portfolio</a></li>
+                     <li><a>Blogs</a></li>
+                     <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    </header>
+
+    
 </body>
 </html>
