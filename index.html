@@ -403,39 +403,49 @@
           </div>
 
           <!-- card 3, card 4 & card 5 -->
-           <div class="mx-5">
+           <div class="mx-5 lg:flex lg:gap-6">
             <!-- card 3 -->
-            <div class="bg-white rounded-3xl md:mt-5 border border-bg-main ">
-              <img class="w-full h-[200px] p-6" src="assets/img3.png" alt="" />
+            <div class="bg-white rounded-3xl lg:mt-5 border border-bg-main hidden lg:block lg:w-1/4">
+              <img class="w-full h-56 p-6" src="assets/img3.png" alt="" />
             </div>
-              <!-- card 4 -->
-              <div class="bg-white p-6 lg:mr-5 mt-4 rounded-3xl flex flex-col md:flex-row md:gap-6 border border-bg-main">
-                <div class="pb-6 md:pb-0 md:w-full">
-                  <img class="w-full" src="assets/img4.png" alt="" />
+              <!-- card 4 with text -->
+            <div class="bg-white p-6 mt-4 lg:mt-5 rounded-3xl flex lg:w-2/4 flex-col md:flex-row md:gap-6 border border-bg-main lg:h-56">
+                <div class="flex-1">
+                  <img class="w-full h-44" src="assets/img4.png" alt="" />
                 </div>
   
-                <div>
+                <div class="flex-1 mt-6 md:mt-0">
                   <!-- TEXT -->
-                  <div class="space-y-4">
+                  <div class="space-y-2 w-full">
                     <h4 class="text-xl font-extrabold text-dark2">Commercial</h4>
                     <p class="text-dark3 font-medium">
                       The barn house captivates with its blend of rustic charm and
-                      modern. The barn house captivates with its blend of rustic
-                      charm and modern .
+                      modern.
                     </p>
                   </div>
                   <!-- button -->
-                  <div class="flex items-center mt-5">
+                  <div class="flex items-center mt-6">
                     <h3 class="font-bold text-dark0">View Details</h3>
                     <i
                       class="fa-solid fa-arrow-right flex ml-2 w-8 h-8 rounded-full items-center -rotate-45 justify-center bg-primary"
                     ></i>
                   </div>
                 </div>
-              </div>
+            </div>
               <!-- card 5 -->
-            <div class="bg-white rounded-3xl mt-5 border border-bg-main ">
-              <img class="w-full h-[200px] p-6" src="assets/img5.png" alt="" />
+            <div class="bg-white rounded-3xl mt-5 border border-bg-main lg:w-1/4 hidden lg:block">
+              <img class="w-full h-56 p-6" src="assets/img5.png" alt="" />
+            </div>
+           </div>
+           <!-- last two cards with extra image -->
+           <div class="lg:hidden grid grid-cols-1 md:grid-cols-2 md:gap-6 mx-5">
+              <!-- card 5 -->
+              <div class="bg-white rounded-3xl mt-5 border border-bg-main lg:w-1/4">
+                <img class="w-full h-56 p-6" src="assets/img5.png" alt="" />
+              </div>
+            <!-- extra card for small device -->
+            <div class="bg-white rounded-3xl mt-5 border border-bg-main lg:hidden">
+              <img class="w-full h-56 p-6" src="assets/img3.png" alt="" />
             </div>
            </div>
         </div>
